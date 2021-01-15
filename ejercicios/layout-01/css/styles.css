@@ -3,12 +3,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 
 
 /* Body */
 .body {
-    margin: 10px;
+    margin: 20px;
+    font-family: "Montserrat", sans-serif;
 }
 
 
@@ -18,6 +21,15 @@
     background-image: url(../img/portada.jpg);
     background-color: grey;
     padding: 60px;
+    filter: brightness(30%);
+    height: 700px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+
+}
+
+header div {
+    z-index: 0;
 }
 
 
@@ -36,6 +48,12 @@
    
 }
 
+.nav_ul-logo label {
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
 .nav_ul-button {
     display: flex;
 }
@@ -43,16 +61,21 @@
 .nav_buttom-seguir {
     border-radius: 15px;
     background-color: dimgray;
-    padding: 8px;
+    width: 150px;
+    height: 30px;
+    margin-right: 5px;
     color: white;
+    border: none;
    
 }
 
 .nav_buttom-atras {
     border-radius: 15px;
     background-color: mediumpurple;
-    padding: 8px;
+    width: 100px;
+    height: 30px;
     color: white;
+    border: none;
     
 }
 
@@ -74,39 +97,72 @@
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: mediumpurple;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
+
 }
 
-.section_div {
+.section_div-textos {
+    display: flex;
+    justify-content: flex-end;   
     margin-left: 10px;
+    padding-right: 20px;
+
 }
 
-.section_div-img {
-    margin-left: 10px;
+.section_div-textos div {
+    width: 70%;
+
 }
 
-.section_div-h2 {
+.section_texto {
     color: white;
-    margin-bottom: 8px;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
-.section__button-vermas {
-    background-color: rgba(0, 255, 191, 0.822);
-    border-radius: 60px;
-    padding: 10px;
+
+.section_titulo {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 8px;
+    
+}
+
+.section_texto {
+    color: rgba(255, 255, 255, 0.678);
+    font-size: 16px;
+}
+
+
+
+
+.section_button-vermas {
+    background-color: rgba(0, 255, 191, 0.541);
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+    margin-top: 30px;
 }
 
 .section_div-img {
-    justify-content: center;
-    gap: 15px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
 }
 
 
 /* Footer */
 .footer {
     display: grid;
-    background-color: azure;
+    background-color: grey;
     padding: 40px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .footer_div-contenedor {
@@ -116,10 +172,12 @@
 }
 
 .footer_div-ht-titulo {
-    font-size: medium;
-    color: gray;
+    font-size: 17px;
+    color:silver;
+    margin-bottom: 20px;
 }
 
 .footer_div-ht {
-    color: gray;
+    color: silver;
+    font-size: 10px;
 }
