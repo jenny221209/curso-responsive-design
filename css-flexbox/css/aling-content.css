@@ -1,0 +1,39 @@
+
+/* SECTION */
+.section-aling-content {
+    background-color: #3E4145;
+    padding: 100px;
+}
+
+/* Div */
+.contenedor-ac-1 {
+    display: flex;
+    align-content: flex-end;
+    flex-flow: row wrap;
+    background-color: firebrick;
+    height: 300px;
+}
+
+.div-ac-1 {
+    width: 100px;
+    height: 100px;
+    background-color: goldenrod;
+    margin: 10px;
+}
+
+.contenedor-ac-2 {
+display: flex;
+align-content: space-between;
+flex-flow: row wrap;
+background-color: indianred;
+height: 300px;
+
+}
+
+.div-ac-2 {
+    width: 45%;
+    height: 50px;
+    background-color: lightpink;
+    margin: 0 10px;
+}
+

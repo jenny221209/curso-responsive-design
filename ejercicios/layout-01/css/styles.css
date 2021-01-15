@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Body */
+.body {
+    margin: 10px;
+}
+
+
+/* Header */
+.header {
+    display: grid;
+    background-image: url(../img/portada.jpg);
+    background-color: grey;
+    padding: 60px;
+}
+
+
+/* Nav */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+
+.nav_ul-logo {
+    display: flex;
+    color:rebeccapurple;
+   
+}
+
+.nav_ul-button {
+    display: flex;
+}
+
+.nav_buttom-seguir {
+    border-radius: 15px;
+    background-color: dimgray;
+    padding: 8px;
+    color: white;
+   
+}
+
+.nav_buttom-atras {
+    border-radius: 15px;
+    background-color: mediumpurple;
+    padding: 8px;
+    color: white;
+    
+}
+
+
+/* Div */
+.div_text {
+    display: flex;
+    justify-content: flex-end;    
+}
+
+
+.div_h1-text {
+    color: white;
+}
+
+
+/* Section */
+.section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: mediumpurple;
+    padding: 20px;
+}
+
+.section_div {
+    margin-left: 10px;
+}
+
+.section_div-img {
+    margin-left: 10px;
+}
+
+.section_div-h2 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.section__button-vermas {
+    background-color: rgba(0, 255, 191, 0.822);
+    border-radius: 60px;
+    padding: 10px;
+}
+
+.section_div-img {
+    justify-content: center;
+    gap: 15px;
+}
+
+
+/* Footer */
+.footer {
+    display: grid;
+    background-color: azure;
+    padding: 40px;
+}
+
+.footer_div-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between ;
+}
+
+.footer_div-ht-titulo {
+    font-size: medium;
+    color: gray;
+}
+
+.footer_div-ht {
+    color: gray;
+}
