@@ -16,3 +16,103 @@ body {
 
 
 /* Nav */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    /*background-color:blue;*/
+    padding: 30px;
+}
+
+.nav__ul-logo {
+    display: flex;
+    justify-content: flex-end;    
+    color: black;
+    
+}
+
+.nav__ul-logo label {
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.nav__ul-texto {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav__li {
+    list-style: none;
+    margin-left: 10px;
+   
+}
+
+
+.nav__a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+} 
+
+.nav__a:hover {
+    color: mediumblue;
+}
+
+
+
+/* Header */
+.header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-image: url("../img/fondo.jpg");
+    padding: 25px 20px ;
+}
+
+.header__div-img {
+    display: flex;
+    
+}
+
+.header__div-textos {
+    display: flex;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+.header__div-textos div {
+    width: 70%;
+}
+
+
+
+
+/* Section */
+.section {
+    /*background-color: blue;*/
+    display: grid;
+    height: 400px;
+}
+
+.section__div-bloque {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 150px;
+}
+
+
+/* Footer */
+.footer {
+    display: grid;
+    height: 200px;
+    background-color:  rgb(194, 205, 221);
+}
+
+
+.footer__div-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 20px;
+}
+    
+
