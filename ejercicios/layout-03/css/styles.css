@@ -15,6 +15,7 @@ body {
 
 
 
+/* --------------------- Destop ------------------- */
   /* Nav */
   .nav {
     display: flex;
@@ -25,7 +26,6 @@ body {
 
     .nav__ul-logo {
         display: flex;
-        justify-content: flex-end;
         color: cornflowerblue; 
     }
 
@@ -56,15 +56,15 @@ body {
     /* Header */
     .header {
         display: flex;
-        background-image: url("../img/fondo.png");
+        background-image: url("../img/fondo.jpg");
         align-items: flex-end;
         color: white;
         font-size: 30px;
         padding: 30px;
-        height: 500px;
+        height: 350px;
     }
 
-    .header__h4 {
+    .header__titulo {
        margin-right: 40px;
     }
 
@@ -86,6 +86,7 @@ body {
 
     .section__div-bloque {
         background-color: white;
+        margin-right: 10px;
     }
 
     .section__div-titulo {
@@ -95,6 +96,14 @@ body {
         background-color: dodgerblue;
         color: white;
         height: 50px;  
+    }
+
+    .section__img {
+        display: flex;
+        margin: auto;
+        margin-top: 25px;
+        width: 200px;
+        height: 100px;
     }
 
     .section__div-texto {
@@ -108,7 +117,85 @@ body {
        justify-content: center;
        color: dodgerblue;
        padding: 15px;
+       margin-top: 50px;
    }
+
+
+
+
+   /* -------------------------- Table -------------------------- */
+@media screen and (max-width: 768px) {
+
+    /* Nav */
+    .nav__a {
+        font-size: 14px;
+    }
+
+    .nav__ul-login {
+        font-size: 14px;
+    }
+
+
+    /* Header */
+    .header__div-img img {
+        width: 300px;
+    }
+
+    .header__titulo {
+        font-size: 20px;
+    }
+
+    
+    /*Section*/
+    .section {
+       height: 100%;
+    }
+    .section__div-contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .section__div-bloque h2 {
+        font-size: 18px;
+    }
+
+    .section__div-bloque p {
+        font-size: 10px;
+    }
+}
+
+
+
+
+/* -------------------------- Movil -------------------------- */
+@media screen and (max-width: 425px) {
+
+    body {
+        background-color: white;
+    }
+
+
+    /* Header */
+    .header {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+
+    /* Section */
+    .section {
+        height: 100%;
+    }
+
+    .section__div-contenedor  {
+        display: grid;
+        grid-template-columns: 100%;
+        
+    }
+
+       
+}
+
     
 
    
